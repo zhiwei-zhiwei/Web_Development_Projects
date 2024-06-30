@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>Mood Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Lobster&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="top_bar">
+    <h1>Mood Board</h1>
+    <div class="search">
+      <div class="form">
+        <input/>
+        <button id="runSearchButton">Search</button>
+      </div>
+      <div class="suggestions">
+        <h3>Suggested Searches</h3>
+        <ul>
+          <!-- <li>Cats</li>
+          <li>More Cats</li>
+          <li>Lol Cats</li>
+          <li>Cats in Hats</li>
+          <li>Cute Cats</li>
+          <li>Dogs?</li>
+          <li>It's the internet, of course it's cats</li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="results" class="results">
+    <div id="resultsExpander">
+      <a id="closeResultsButton" href="#" title="Close the search results pane">
+        <span class="material-symbols-outlined">close</span>
+      </a>
+      <div class="loading">
+        <span class="spinner material-symbols-outlined">
+          progress_activity
+        </span>
+      </div>
+      <div id="resultsImageContainer">
+
+      </div>
+    </div>
+  </div>
+
+  <div id="board">
+    
+  </div>
+
+  <script src="apikey.js"></script>
+  <script src="mood.js"></script>
+</body>
+</html>

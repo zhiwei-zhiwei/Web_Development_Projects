@@ -1,0 +1,343 @@
+.dm-serif display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+i{
+    padding-top: 15px;
+}
+
+.nav {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e2e2;
+}
+
+.hero {
+    padding: 10px;
+    margin: 10px;
+    /* background: aqua; */
+    opacity: 1;
+}
+
+.button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.image-container {
+    display: grid;
+    place-items: center;
+    /* Centers content both horizontally and vertically */
+    width: 100%;
+    /* Adjust as needed */
+    aspect-ratio: 16 / 9;
+    /* Maintains a 16:9 aspect ratio */
+}
+
+.image-container img {
+    grid-area: 1 / 1 / 2 / 2;
+    /* Positions the image in the first grid cell */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container without stretching */
+}
+
+.centered-button {
+    grid-area: 1 / 1 / 2 / 2;
+    /* Positions the button in the same grid cell as the image */
+    z-index: 1;
+    /* Ensures the button is above the image */
+    font-size: xx-large;
+    height: 200px;
+    width: 400px;
+    background-color: rgba(30, 30, 30, 0.679);
+
+    color: rgb(255, 247, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+li {
+    flex: 1 100px;
+}
+
+.nav-link {
+    display: block;
+    height: 50px;
+
+    line-height: 50px;
+    padding: .5rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.nav-link.active,
+.nav-link:active {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: .25rem;
+}
+
+.nav-link:not(.disabled):hover {
+    color: #00d5ff;
+}
+
+.nav-link.disabled {
+    color: #6c757d;
+    background-color: transparent;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cta-button {
+    background-color: rgba(51, 51, 51, 0.304);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Content Sections */
+#pricing,
+#testimonials,
+#stories {
+    padding: 20px;
+    text-align: center;
+}
+
+#stories {
+    width: 80%;
+    margin: auto;
+}
+
+.columns {
+    column-count: 4;
+}
+
+section.prices {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background: rgba(255, 230, 0, 0.486);
+    flex: 1;
+}
+
+.testimonials {
+    padding: 10px;
+    margin: 10px;
+    background: rgba(239, 241, 197, 0.466);
+    opacity: 1;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.box2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.box5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.box6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.box7 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box8 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.box9 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: #bfbfbf;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 500px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    li {
+        flex: 1 20px;
+    }
+
+    body {
+        font-size: small;
+    }
+
+    .nav-link {
+        display: block;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    header {
+        padding: 50px 0;
+    }
+
+    .columns {
+        column-count: 1;
+    }
+
+    section.prices {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .box1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .box2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .box3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .box4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .box5 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .box6 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    .box7 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+
+    .box8 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+
+    .box9 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+}
